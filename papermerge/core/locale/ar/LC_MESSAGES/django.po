@@ -1,0 +1,683 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: Paper Merge\n"
+"Language: ar-bh\n"
+
+#: papermerge/contrib/admin/forms.py:247
+msgid "Number of hours this token will be valid (4464 hours ~ 6 months)"
+msgstr "عدد الساعات التي سيكون فيها هذا الرمز المميز صالحًا (4464 ساعة إلى 6 أشهر)"
+
+#: papermerge/contrib/admin/models.py:19
+msgid "Debug"
+msgstr "تصحيح"
+
+#: papermerge/contrib/admin/models.py:20
+#: papermerge/contrib/admin/templates/admin/base.html:33
+msgid "Info"
+msgstr "معلومات"
+
+#: papermerge/contrib/admin/models.py:21
+msgid "Warning"
+msgstr "تحذير"
+
+#: papermerge/contrib/admin/models.py:22
+msgid "Error"
+msgstr "خطأ"
+
+#: papermerge/contrib/admin/models.py:23
+msgid "Critical"
+msgstr "حرج"
+
+#: papermerge/contrib/admin/models.py:33
+msgid "action time"
+msgstr "وقت العمل"
+
+#: papermerge/contrib/admin/models.py:46
+msgid "log entry"
+msgstr "تسجيل دخول"
+
+#: papermerge/contrib/admin/models.py:47
+msgid "log entries"
+msgstr "إدخالات السجل"
+
+#: papermerge/contrib/admin/signals.py:39
+msgid "Running automates for doc_id=%(doc_id)s, page %(page_num)s.But in meantime document probably was deleted."
+msgstr "التشغيل الآلي لـ doc_id =٪ (doc_id) s ، الصفحة٪ (page_num) s ولكن في هذه الأثناء ربما تم حذف المستند."
+
+#: papermerge/contrib/admin/signals.py:52
+msgid "Running automates for document %(document_title)s, page=%(page_num)s, doc_id=%(doc_id)s. text=%(text)s"
+msgstr "التشغيل الآلي للمستند٪ (document_title) s ، الصفحة =٪ (page_num) s ، doc_id =٪ (doc_id) s. نص =٪ (نص) s"
+
+#: papermerge/contrib/admin/signals.py:84
+msgid "COMPLETE"
+msgstr "اكتمال"
+
+#: papermerge/contrib/admin/signals.py:86
+msgid "STARTED"
+msgstr "بدأت"
+
+#: papermerge/contrib/admin/signals.py:95
+msgid "%(human_status)s OCR for doc_id=%(doc_id)s, page %(page_num)s.But in meantime document probably was deleted."
+msgstr "٪ (human_status) s OCR لـ doc_id =٪ (doc_id) s ، الصفحة٪ (page_num) s ، ولكن في هذه الأثناء ربما تم حذف المستند."
+
+#: papermerge/contrib/admin/signals.py:109
+msgid "%(human_status)s OCR for document %(document_title)s, page=%(page_num)s, language=%(lang)s, doc_id=%(doc_id)s."
+msgstr "٪ (human_status) s OCR للمستند٪ (document_title) s ، الصفحة =٪ (page_num) s ، اللغة =٪ (lang) s ، doc_id =٪ (doc_id) s."
+
+#: papermerge/contrib/admin/signals.py:143
+msgid "Node/Folder %(folder_title)s created. Folder id=%(folder_id)s."
+msgstr "تم إنشاء العقدة / المجلد٪ (folder_title) s. معرف المجلد =٪ (folder_id) s."
+
+#: papermerge/contrib/admin/signals.py:163
+msgid "Node(s) %(node_titles)s were deleted. Node ids=%(node_ids)s"
+msgstr "تم حذف العقد (العقد)٪ (node_titles) s. معرفات العقدة =٪ (node_ids) s"
+
+#: papermerge/contrib/admin/templates/account/base.html:7
+msgid "Log in"
+msgstr "تسجيل الدخول"
+
+#: papermerge/contrib/admin/templates/account/login.html:12
+msgid "Sign in to start your session"
+msgstr "تسجيل الدخول لبدء الجلسة الخاصة بك"
+
+#: papermerge/contrib/admin/templates/account/login.html:28
+#: papermerge/contrib/admin/templates/admin/add_user.html:44
+#: papermerge/contrib/admin/templates/admin/users.html:35
+msgid "Username"
+msgstr "اسم المستخدم"
+
+#: papermerge/contrib/admin/templates/account/login.html:36
+#: papermerge/contrib/admin/templates/admin/add_user.html:50
+msgid "Password"
+msgstr "كلمه السر"
+
+#: papermerge/contrib/admin/templates/account/login.html:48
+msgid "Remember Me"
+msgstr "تذكرنى"
+
+#: papermerge/contrib/admin/templates/account/login.html:54
+msgid "Sign In"
+msgstr "تسجيل الدخول"
+
+#: papermerge/contrib/admin/templates/account/login.html:61
+msgid "I forgot my password"
+msgstr "لقد نسيت كلمة المرور"
+
+#: papermerge/contrib/admin/templates/account/logout.html:5
+#: papermerge/contrib/admin/templates/account/logout.html:8
+msgid "Sign Out"
+msgstr "خروج"
+
+#: papermerge/contrib/admin/templates/account/logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr "هل أنت متأكد أنك تريد الخروج؟"
+
+#: papermerge/contrib/admin/templates/account/logout.html:18
+msgid "Yes, sign out"
+msgstr "نعم ، تسجيل الخروج"
+
+#: papermerge/contrib/admin/templates/account/logout.html:19
+msgid "Nope, take me back!"
+msgstr "كلا ، أعدني!"
+
+#: papermerge/contrib/admin/templates/account/password_change.html:5
+#: papermerge/contrib/admin/templates/account/password_change.html:10
+#: papermerge/contrib/admin/templates/admin/_nav.html:71
+#: papermerge/contrib/admin/templates/admin/add_user.html:5
+#: papermerge/contrib/admin/templates/admin/user_change_password.html:5
+msgid "Change Password"
+msgstr "غير كلمة السر"
+
+#: papermerge/contrib/admin/templates/account/password_change.html:39
+#: papermerge/contrib/admin/templates/account/password_change.html:40
+msgid "Current Password"
+msgstr "كلمة المرور الحالية"
+
+#: papermerge/contrib/admin/templates/account/password_change.html:44
+msgid "New Password"
+msgstr "كلمة سر جديدة"
+
+#: papermerge/contrib/admin/templates/account/password_change.html:45
+#: papermerge/contrib/admin/templates/admin/add_user.html:51
+msgid "password"
+msgstr "كلمه السر"
+
+#: papermerge/contrib/admin/templates/account/password_change.html:48
+msgid "New Password (again)"
+msgstr "كلمة مرور جديدة (مرة أخرى)"
+
+#: papermerge/contrib/admin/templates/account/password_change.html:49
+msgid "password (again)"
+msgstr "أدخل كلمة السر مرة أخرى)"
+
+#: papermerge/contrib/admin/templates/account/password_change.html:53
+#: papermerge/contrib/admin/templates/admin/automate.html:54
+#: papermerge/contrib/admin/templates/admin/document.html:15
+#: papermerge/contrib/admin/templates/admin/group.html:43
+#: papermerge/contrib/admin/templates/admin/preferences.html:43
+#: papermerge/contrib/admin/templates/admin/tag.html:62
+#: papermerge/contrib/admin/templates/admin/user.html:57
+#: papermerge/contrib/admin/templates/admin/user_change_password.html:54
+msgid "Save"
+msgstr "حفظ"
+
+#: papermerge/contrib/admin/templates/account/password_change.html:61
+#: papermerge/contrib/admin/templates/admin/add_user.html:68
+#: papermerge/contrib/admin/templates/admin/user_change_password.html:62
+msgid "Your password can’t be too similar to your other personal information."
+msgstr "لا يمكن أن تكون كلمة مرورك مشابهة جدًا لمعلوماتك الشخصية الأخرى."
+
+#: papermerge/contrib/admin/templates/account/password_change.html:65
+#: papermerge/contrib/admin/templates/admin/add_user.html:72
+#: papermerge/contrib/admin/templates/admin/user_change_password.html:66
+msgid "Your password must contain at least 8 characters."
+msgstr "يجب أن تحتوي كلمة المرور الخاصة بك على 8 أحرف على الأقل."
+
+#: papermerge/contrib/admin/templates/account/password_change.html:69
+#: papermerge/contrib/admin/templates/admin/add_user.html:76
+#: papermerge/contrib/admin/templates/admin/user_change_password.html:70
+msgid "Your password can’t be a commonly used password."
+msgstr "لا يمكن أن تكون كلمة المرور الخاصة بك كلمة مرور شائعة الاستخدام."
+
+#: papermerge/contrib/admin/templates/account/password_change.html:73
+#: papermerge/contrib/admin/templates/admin/add_user.html:80
+#: papermerge/contrib/admin/templates/admin/user_change_password.html:74
+msgid "Your password can’t be entirely numeric."
+msgstr "لا يمكن أن تكون كلمة مرورك رقمية بالكامل."
+
+#: papermerge/contrib/admin/templates/account/password_reset.html:9
+msgid "You forgot your password? Here you can easily retrieve a new password."
+msgstr "هل نسيت كلمة المرور الخاصة بك؟ هنا يمكنك بسهولة استرداد كلمة المرور الجديدة."
+
+#: papermerge/contrib/admin/templates/account/password_reset.html:13
+msgid "Email address"
+msgstr "عنوان بريد الكتروني"
+
+#: papermerge/contrib/admin/templates/account/password_reset.html:22
+msgid "Request new password"
+msgstr "طلب كلمة مرور جديدة"
+
+#: papermerge/contrib/admin/templates/account/password_reset.html:29
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: papermerge/contrib/admin/templates/admin/_aside.html:19
+#: papermerge/contrib/admin/templates/admin/index.html:5
+#: papermerge/contrib/admin/templates/admin/index.html:91
+msgid "Documents"
+msgstr "مستندات"
+
+#: papermerge/contrib/admin/templates/admin/_aside.html:36
+msgid "Inbox"
+msgstr "صندوق الوارد"
+
+#: papermerge/contrib/admin/templates/admin/_aside.html:44
+#: papermerge/contrib/admin/templates/admin/automates.html:5
+#: papermerge/contrib/admin/templates/admin/automates.html:9
+msgid "Automates"
+msgstr "أتمتة"
+
+#: papermerge/contrib/admin/templates/admin/_aside.html:52
+#: papermerge/contrib/admin/templates/admin/_nav.html:31
+#: papermerge/contrib/admin/templates/admin/automate.html:43
+#: papermerge/contrib/admin/templates/admin/automates.html:34
+#: papermerge/contrib/admin/templates/admin/document.html:17
+#: papermerge/contrib/admin/templates/admin/document.html:75
+#: papermerge/contrib/admin/templates/admin/index.html:63
+#: papermerge/contrib/admin/templates/admin/search.html:23
+#: papermerge/contrib/admin/templates/admin/tags.html:5
+#: papermerge/contrib/admin/templates/admin/tags.html:9
+msgid "Tags"
+msgstr "العلامات"
+
+#: papermerge/contrib/admin/templates/admin/_aside.html:60
+#: papermerge/contrib/admin/templates/admin/log_entries.html:5
+#: papermerge/contrib/admin/templates/admin/log_entries.html:9
+msgid "Logs"
+msgstr "السجلات"
+
+#: papermerge/contrib/admin/templates/admin/_aside.html:69
+#: papermerge/contrib/admin/templates/admin/groups.html:5
+#: papermerge/contrib/admin/templates/admin/groups.html:9
+msgid "Groups"
+msgstr "مجموعات"
+
+#: papermerge/contrib/admin/templates/admin/_aside.html:77
+#: papermerge/contrib/admin/templates/admin/users.html:5
+#: papermerge/contrib/admin/templates/admin/users.html:9
+msgid "Users"
+msgstr "المستخدمون"
+
+#: papermerge/contrib/admin/templates/admin/_footer.html:8
+msgid "All rights reserved"
+msgstr "كل الحقوق محفوظة"
+
+#: papermerge/contrib/admin/templates/admin/_nav.html:18
+msgid "Content"
+msgstr "المحتوى"
+
+#: papermerge/contrib/admin/templates/admin/_nav.html:19
+#: papermerge/contrib/admin/templates/admin/_nav.html:50
+msgid "Search"
+msgstr "بحث"
+
+#: papermerge/contrib/admin/templates/admin/_nav.html:22
+msgid "In Folder"
+msgstr "في المجلد"
+
+#: papermerge/contrib/admin/templates/admin/_nav.html:26
+msgid "With"
+msgstr "مع"
+
+#: papermerge/contrib/admin/templates/admin/_nav.html:28
+#: papermerge/contrib/admin/templates/admin/index.html:85
+msgid "All"
+msgstr "الكل"
+
+#: papermerge/contrib/admin/templates/admin/_nav.html:29
+msgid "Any"
+msgstr "أي"
+
+#: papermerge/contrib/admin/templates/admin/_nav.html:43
+msgid "Advanced Search"
+msgstr "البحث المتقدم"
+
+#: papermerge/contrib/admin/templates/admin/_nav.html:77
+msgid "API Tokens"
+msgstr "رموز API"
+
+#: papermerge/contrib/admin/templates/admin/_nav.html:82
+#: papermerge/contrib/admin/templates/admin/preferences.html:5
+#: papermerge/contrib/admin/templates/admin/preferences.html:10
+msgid "Preferences"
+msgstr "التفضيلات"
+
+#: papermerge/contrib/admin/templates/admin/_nav.html:95
+msgid "Documentation"
+msgstr "توثيق"
+
+#: papermerge/contrib/admin/templates/admin/_nav.html:101
+msgid "Log out"
+msgstr "تسجيل خروج"
+
+#: papermerge/contrib/admin/templates/admin/add_user.html:10
+#: papermerge/contrib/admin/templates/admin/users.html:14
+msgid "New User"
+msgstr "مستخدم جديد"
+
+#: papermerge/contrib/admin/templates/admin/add_user.html:16
+msgid "First, enter a username and password. Then, you’ll be able to edit more user options."
+msgstr "أولاً ، أدخل اسم المستخدم وكلمة المرور. بعد ذلك ، ستتمكن من تعديل المزيد من خيارات المستخدم."
+
+#: papermerge/contrib/admin/templates/admin/add_user.html:45
+msgid "username"
+msgstr "اسم المستخدم"
+
+#: papermerge/contrib/admin/templates/admin/add_user.html:55
+msgid "Password confirmation"
+msgstr "تأكيد كلمة المرور"
+
+#: papermerge/contrib/admin/templates/admin/add_user.html:56
+msgid "password (confirmation)"
+msgstr "تأكيد كلمة المرور)"
+
+#: papermerge/contrib/admin/templates/admin/add_user.html:60
+msgid "Continue"
+msgstr "استمر"
+
+#: papermerge/contrib/admin/templates/admin/automate.html:5
+#: papermerge/contrib/admin/views/automates.py:23
+msgid "New Automate"
+msgstr "أتمتة جديدة"
+
+#: papermerge/contrib/admin/templates/admin/automate.html:47
+msgid "These tags will be assignet to matched document."
+msgstr "سيتم تعيين هذه العلامات للمستند المتطابق."
+
+#: papermerge/contrib/admin/templates/admin/automates.html:14
+msgid "New"
+msgstr "جديد"
+
+#: papermerge/contrib/admin/templates/admin/automates.html:17
+msgid "Delete selected automates"
+msgstr "حذف الأتمتة المحددة"
+
+#: papermerge/contrib/admin/templates/admin/automates.html:19
+#: papermerge/contrib/admin/templates/admin/groups.html:24
+#: papermerge/contrib/admin/templates/admin/log_entries.html:20
+#: papermerge/contrib/admin/templates/admin/tags.html:20
+#: papermerge/contrib/admin/templates/admin/tokens.html:24
+#: papermerge/contrib/admin/templates/admin/users.html:20
+msgid "Go"
+msgstr "اذهب"
+
+#: papermerge/contrib/admin/templates/admin/automates.html:29
+msgid "Name"
+msgstr "اسم"
+
+#: papermerge/contrib/admin/templates/admin/automates.html:32
+msgid "Match"
+msgstr "مباراة"
+
+#: papermerge/contrib/admin/templates/admin/automates.html:33
+msgid "Destination Folder"
+msgstr "مجلد الوجهة"
+
+#: papermerge/contrib/admin/templates/admin/automates.html:55
+msgid "No automates defined so far"
+msgstr "لم يتم تعريف الأتمتة حتى الآن"
+
+#: papermerge/contrib/admin/templates/admin/base.html:95
+msgid "Select a folder or a document to see its details here"
+msgstr "حدد مجلدًا أو مستندًا للاطلاع على تفاصيله هنا"
+
+#: papermerge/contrib/admin/templates/admin/document.html:12
+#: papermerge/contrib/admin/templates/admin/document.html:56
+#: papermerge/contrib/admin/templates/admin/document_404.html:17
+#: papermerge/contrib/admin/templates/admin/index.html:41
+msgid "Download"
+msgstr "تحميل"
+
+#: papermerge/contrib/admin/templates/admin/document.html:27
+msgid "Language"
+msgstr "لغة"
+
+#: papermerge/contrib/admin/templates/admin/document.html:33
+msgid "Notes"
+msgstr "ملاحظات"
+
+#: papermerge/contrib/admin/templates/admin/document.html:37
+#: papermerge/contrib/admin/templates/admin/document_404.html:44
+#: papermerge/contrib/admin/templates/admin/index.html:73
+msgid "Delete"
+msgstr "حذف"
+
+#: papermerge/contrib/admin/templates/admin/document.html:52
+#: papermerge/contrib/admin/templates/admin/document_404.html:13
+#: papermerge/contrib/admin/templates/admin/index.html:36
+msgid "Actions"
+msgstr "أجراءات"
+
+#: papermerge/contrib/admin/templates/admin/document.html:59
+#: papermerge/contrib/admin/templates/admin/document_404.html:40
+#: papermerge/contrib/admin/templates/admin/index.html:66
+msgid "Rename"
+msgstr "إعادة تسمية"
+
+#: papermerge/contrib/admin/templates/admin/document.html:62
+msgid "Delete Page"
+msgstr "حذف الصفحة"
+
+#: papermerge/contrib/admin/templates/admin/document.html:67
+#: papermerge/contrib/admin/templates/admin/document_404.html:21
+#: papermerge/contrib/admin/templates/admin/index.html:44
+msgid "Cut"
+msgstr "يقطع"
+
+#: papermerge/contrib/admin/templates/admin/document.html:71
+#: papermerge/contrib/admin/templates/admin/document_404.html:27
+#: papermerge/contrib/admin/templates/admin/index.html:50
+msgid "Paste"
+msgstr "معجون"
+
+#: papermerge/contrib/admin/templates/admin/document.html:79
+msgid "Apply Reorder Changes"
+msgstr "تطبيق إعادة ترتيب التغييرات"
+
+#: papermerge/contrib/admin/templates/admin/document_404.html:31
+#: papermerge/contrib/admin/templates/admin/index.html:54
+msgid "Documents & Folders"
+msgstr "المستندات والمجلدات"
+
+#: papermerge/contrib/admin/templates/admin/document_404.html:34
+#: papermerge/contrib/admin/templates/admin/index.html:57
+msgid "Pages"
+msgstr "الصفحات"
+
+#: papermerge/contrib/admin/templates/admin/document_404.html:68
+msgid "Document not found"
+msgstr "لم يتم العثور على المستند"
+
+#: papermerge/contrib/admin/templates/admin/group.html:5
+#: papermerge/contrib/admin/templates/admin/groups.html:19
+#: papermerge/contrib/admin/views/groups.py:27
+msgid "New Group"
+msgstr "مجموعة جديدة"
+
+#: papermerge/contrib/admin/templates/admin/groups.html:11
+msgid "\n"
+"            A group - is a collection of users. A groups is a convinient model to group/associate a number of users together. For example only users belonging to accounting group might be allowed to access Accounting-2020 folder.\n"
+"          "
+msgstr "\n"
+"            مجموعة - هي مجموعة من المستخدمين. المجموعات هي نموذج ملائم لتجميع / ربط عدد من المستخدمين معًا. على سبيل المثال ، قد يُسمح فقط للمستخدمين الذين ينتمون إلى مجموعة المحاسبة بالوصول إلى مجلد Accounting-2020.\n"
+"          "
+
+#: papermerge/contrib/admin/templates/admin/groups.html:22
+msgid "Delete selected groups"
+msgstr "حذف المجموعات المحددة"
+
+#: papermerge/contrib/admin/templates/admin/groups.html:34
+msgid "Group Name"
+msgstr "أسم المجموعة"
+
+#: papermerge/contrib/admin/templates/admin/groups.html:48
+msgid "No groups defined so far"
+msgstr "لم يتم تحديد مجموعات حتى الآن"
+
+#: papermerge/contrib/admin/templates/admin/index.html:16
+msgid "Upload"
+msgstr "رفع"
+
+#: papermerge/contrib/admin/templates/admin/index.html:29
+msgid "New Folder"
+msgstr "ملف جديد"
+
+#: papermerge/contrib/admin/templates/admin/index.html:69
+msgid "Access"
+msgstr "التمكن من"
+
+#: papermerge/contrib/admin/templates/admin/index.html:81
+msgid "Select"
+msgstr "تحديد"
+
+#: papermerge/contrib/admin/templates/admin/index.html:88
+msgid "Folders"
+msgstr "المجلدات"
+
+#: papermerge/contrib/admin/templates/admin/index.html:94
+msgid "Deselect"
+msgstr "إلغاء"
+
+#: papermerge/contrib/admin/templates/admin/index.html:97
+msgid "Invert Selection"
+msgstr "اختيار المقلوب"
+
+#: papermerge/contrib/admin/templates/admin/log_entries.html:18
+msgid "Delete selected logs"
+msgstr "حذف السجلات المختارة"
+
+#: papermerge/contrib/admin/templates/admin/log_entries.html:52
+msgid "Time"
+msgstr "زمن"
+
+#: papermerge/contrib/admin/templates/admin/log_entries.html:55
+#: papermerge/contrib/admin/templates/admin/log_entry.html:21
+msgid "Message"
+msgstr "رسالة"
+
+#: papermerge/contrib/admin/templates/admin/log_entries.html:56
+msgid "User"
+msgstr "المستعمل"
+
+#: papermerge/contrib/admin/templates/admin/log_entries.html:57
+msgid "Level"
+msgstr "مستوى"
+
+#: papermerge/contrib/admin/templates/admin/log_entries.html:72
+msgid "No logs so far"
+msgstr "لا توجد سجلات حتى الآن"
+
+#: papermerge/contrib/admin/templates/admin/log_entry.html:5
+#: papermerge/contrib/admin/views/logs.py:29
+msgid "Log Entry"
+msgstr "تسجيل دخول"
+
+#: papermerge/contrib/admin/templates/admin/log_entry.html:17
+msgid "level"
+msgstr "مستوى"
+
+#: papermerge/contrib/admin/templates/admin/log_entry.html:27
+msgid "Close"
+msgstr "أغلق"
+
+#: papermerge/contrib/admin/templates/admin/search.html:5
+msgid "Search Results"
+msgstr "نتائج البحث"
+
+#: papermerge/contrib/admin/templates/admin/search.html:16
+msgid "Home"
+msgstr "الصفحة الرئيسية"
+
+#: papermerge/contrib/admin/templates/admin/search.html:19
+msgid "Term"
+msgstr "مصطلح"
+
+#: papermerge/contrib/admin/templates/admin/search.html:28
+msgid "OR"
+msgstr "أو"
+
+#: papermerge/contrib/admin/templates/admin/search.html:30
+msgid "AND"
+msgstr "و"
+
+#: papermerge/contrib/admin/templates/admin/search.html:38
+msgid "Folder"
+msgstr "مجلد"
+
+#: papermerge/contrib/admin/templates/admin/tag.html:5
+msgid "Tag"
+msgstr "بطاقة شعار"
+
+#: papermerge/contrib/admin/templates/admin/tags.html:18
+msgid "Delete selected tags"
+msgstr "حذف العلامات المحددة"
+
+#: papermerge/contrib/admin/templates/admin/tags.html:54
+msgid "Tag Name"
+msgstr "اسم العلامة"
+
+#: papermerge/contrib/admin/templates/admin/tags.html:57
+msgid "Pinned?"
+msgstr "مثبت؟"
+
+#: papermerge/contrib/admin/templates/admin/tags.html:58
+msgid "Description"
+msgstr "وصف"
+
+#: papermerge/contrib/admin/templates/admin/tags.html:81
+msgid "No tag so far"
+msgstr "لا توجد علامة حتى الآن"
+
+#: papermerge/contrib/admin/templates/admin/token.html:5
+#: papermerge/contrib/admin/templates/admin/token.html:10
+msgid "New Authentication Tokens"
+msgstr "رموز المصادقة الجديدة"
+
+#: papermerge/contrib/admin/templates/admin/token.html:43
+msgid "Create"
+msgstr "خلق"
+
+#: papermerge/contrib/admin/templates/admin/tokens.html:5
+#: papermerge/contrib/admin/templates/admin/tokens.html:9
+msgid "Authentication Tokens"
+msgstr "رموز المصادقة"
+
+#: papermerge/contrib/admin/templates/admin/tokens.html:15
+#: papermerge/contrib/admin/templates/admin/tokens.html:17
+msgid "New API Token"
+msgstr "رمز API جديد"
+
+#: papermerge/contrib/admin/templates/admin/tokens.html:33
+msgid "Digest"
+msgstr "استوعب"
+
+#: papermerge/contrib/admin/templates/admin/tokens.html:36
+msgid "Created At"
+msgstr "أنشئت في"
+
+#: papermerge/contrib/admin/templates/admin/tokens.html:37
+msgid "Expires At"
+msgstr "تنتهي في"
+
+#: papermerge/contrib/admin/templates/admin/tokens.html:51
+msgid "No API Tokens defined so far"
+msgstr "لم يتم تحديد رموز API حتى الآن"
+
+#: papermerge/contrib/admin/templates/admin/user.html:14
+msgid "\n"
+"              Raw passwords are not stored, so there is no way to see this user’s password, but you can change the password (of the user your are editing right now) using\n"
+"            "
+msgstr "\n"
+"              لا يتم تخزين كلمات المرور الأولية ، لذلك لا توجد طريقة لرؤية كلمة مرور هذا المستخدم ، ولكن يمكنك تغيير كلمة المرور (للمستخدم الذي تعدله الآن) باستخدام\n"
+"            "
+
+#: papermerge/contrib/admin/templates/admin/user.html:16
+msgid "this form"
+msgstr "هذا من"
+
+#: papermerge/contrib/admin/templates/admin/user_change_password.html:10
+msgid "Change Password for User"
+msgstr "تغيير كلمة المرور للمستخدم"
+
+#: papermerge/contrib/admin/templates/admin/user_change_password.html:12
+msgid "\n"
+"              Enter a new password for the user\n"
+"            "
+msgstr "\n"
+"              أدخل كلمة مرور جديدة للمستخدم\n"
+"            "
+
+#: papermerge/contrib/admin/templates/admin/users.html:18
+msgid "Delete selected users"
+msgstr "حذف المستخدمين المختارين"
+
+#: papermerge/contrib/admin/templates/admin/users.html:38
+msgid "Email Address"
+msgstr "عنوان بريد الكتروني"
+
+#: papermerge/contrib/admin/templates/admin/users.html:39
+msgid "Superuser Status"
+msgstr "حالة المستخدم المتميز"
+
+#: papermerge/contrib/admin/templates/admin/users.html:40
+msgid "Staff Status"
+msgstr "حالة الموظفين"
+
+#: papermerge/contrib/admin/templates/admin/users.html:41
+msgid "Active Status"
+msgstr "الحالة النشطة"
+
+#: papermerge/contrib/admin/templates/admin/users.html:42
+msgid "Last Login"
+msgstr "آخر تسجيل دخول"
+
+#: papermerge/contrib/admin/views/automates.py:32
+msgid "Edit Automate"
+msgstr "تحرير تلقائي"
+
+#: papermerge/contrib/admin/views/groups.py:38
+msgid "Edit Group"
+msgstr "تحرير المجموعة"
+
+#: papermerge/contrib/admin/views/tags.py:23
+msgid "New Tag"
+msgstr "علامة جديدة"
+
+#: papermerge/contrib/admin/views/tags.py:32
+msgid "Edit Tag"
+msgstr "تحرير العلامة"
+

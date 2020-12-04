@@ -24,6 +24,7 @@ RUN apt-get update \
                     tesseract-ocr-rus \
                     tesseract-ocr-ron \
                     tesseract-ocr-spa \
+                    tesseract-ocr-ara \
  && rm -rf /var/lib/apt/lists/* \
  && pip3 install --upgrade pip
 
@@ -36,11 +37,11 @@ ENV PYTHONUNBUFFERED 1
 
 ENV DJANGO_SETTINGS_MODULE config.settings.production
 ENV PATH=/opt/app/:/opt/app/.local/bin:$PATH
-RUN echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen && locale-gen
-ENV LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
+RUN echo 'ar_BH.UTF-8 UTF-8' >> /etc/locale.gen && locale-gen
+ENV LANG=ar_BH.UTF-8 LC_ALL=ar_BH.UTF-8
 
 
-RUN git clone https://github.com/ciur/papermerge --branch v1.5.3 -q --depth 1 /opt/app
+RUN git clone https://github.com/silverman86/noah.git /opt/app
 
 RUN mkdir -p /opt/media
 

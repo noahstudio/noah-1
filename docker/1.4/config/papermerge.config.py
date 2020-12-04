@@ -9,9 +9,10 @@ STATIC_DIR = "/opt/static"
 MEDIA_URL = "/media/"
 STATIC_URL = "/static/"
 
-OCR_DEFAULT_LANGUAGE = "deu"
+OCR_DEFAULT_LANGUAGE = "ara"
 
 OCR_LANGUAGES = {
+    "ara": "Arabic"
     "deu": "Deutsch",
     "spa": "Español",
     "eng": "English",
