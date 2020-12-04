@@ -35,7 +35,7 @@ RUN echo 'ar_BH.UTF-8 UTF-8' >> /etc/locale.gen && locale-gen
 ENV LANG=ar_BH.UTF-8 LC_ALL=ar_BH.UTF-8
 
 
-RUN git clone https://github.com/silverman86/noah.git /opt/app
+RUN git clone https://github.com/noahstudio/noah-1.git /opt/app
 
 RUN mkdir -p /opt/media
 
