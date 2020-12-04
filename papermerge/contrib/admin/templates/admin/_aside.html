@@ -1,0 +1,99 @@
+{% load static i18n admin_tags  %}
+
+<!-- Brand Logo -->
+<a href="{% url 'admin:index' %}" class="brand-link">
+  <img src="{% static 'admin/img/logo_bbg.svg' %}" alt="" class="brand-image"
+       style="opacity: .8">
+  <span class="brand-text font-weight-light">Papermerge</span>
+  {% google_translate %}
+</a>
+
+<!-- Sidebar -->
+<div class="sidebar sidebar_collapse_remember">
+  <!-- Sidebar Menu -->
+  <nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+      <li class="nav-item">
+        <a href="{% url 'admin:browse' %}" class="nav-link {% activate_on 'index, browse' %}">
+          <i class="nav-icon fa fa-folder text-warning"></i>
+          <p>
+            {% trans "Documents" %}
+          </p>
+        </a>
+        <ul id="pinned_tags_view" class="pinned_tags">
+          {% for tag in pinned_tags %}
+            <li class="my-1">
+              <a class="tag" href="{% url 'admin:browse' %}#tagged/{{tag.name}}" style="background-color:{{tag.bg_color}}; color: {{tag.fg_color}};"
+              >{{tag.name}}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+  
+      <li class="nav-item">
+        <a href="{% url 'admin:inbox' %}" class="nav-link  {% activate_on 'inbox' %}">
+          <i class="nav-icon fa fa-inbox"></i>
+          <p>
+            {% trans "Inbox" %} ({{ inbox_count }})
+          </p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{% url 'admin:automates' %}" class="nav-link  {% activate_on 'automates, automate'  %}">
+          <i class="nav-icon fa fa-robot"></i>
+          <p>
+            {% trans "Automates" %}
+          </p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{% url 'admin:tags' %}" class="nav-link  {% activate_on 'tags, tag, tag-update' %}">
+          <i class="nav-icon fa fa-tag"></i>
+          <p>
+            {% trans "Tags" %}
+          </p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{% url 'admin:logs' %}" class="nav-link  {% activate_on 'logs, log-update' %}">
+          <i class="nav-icon fa fa-lightbulb"></i>
+          <p>
+            {% trans "Logs" %}
+          </p>
+        </a>
+      </li>
+      {% if request.user.is_superuser %}
+        <li class="nav-item">
+          <a href="{% url 'admin:groups' %}" class="nav-link  {% activate_on 'groups, group, group-update' %}">
+            <i class="nav-icon fa fa-users"></i>
+            <p>
+              {% trans "Groups" %}
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'admin:users' %}" class="nav-link {% activate_on 'users, user' %}">
+            <i class="nav-icon fa fa-user-friends"></i>
+            <p>
+              {% trans "Users" %}
+            </p>
+          </a>
+        </li>
+      {% endif %}
+      {% if request.user.is_superuser %}
+        {% for nav_item in leftside_navigation %}
+          <li class="nav-item">
+            <a href="{{ nav_item.url }}" class="nav-link {% activate_on nav_item.activate_on %}">
+              <i class="nav-icon {{nav_item.icon_css_class}}"></i>
+              <p>
+                {{nav_item.title}}
+              </p>
+            </a>
+          </li>
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </nav>
+  <!-- /.sidebar-menu -->
+</div>
+<!-- /.sidebar -->

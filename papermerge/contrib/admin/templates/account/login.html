@@ -1,0 +1,69 @@
+{% extends "account/base.html" %}
+
+{% load i18n static %}
+
+
+{% block content %}
+
+<div class="login-box">
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">{% trans "Sign in to start your session" %}</p>
+      {% if form.errors %}
+        <ul class='form-errors text-danger list-unstyled'>
+          {% for field in form %}
+              {% for error in field.errors %}
+                <li><i class="fa fa-exclamation-triangle m-2"></i>{{ error|escape }}</li>
+              {% endfor %}
+          {% endfor %}
+          {% for error in form.non_field_errors %}
+              <li><i class="fa fa-exclamation-triangle m-2"></i>{{ error|escape }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      <form action="{% url 'account_login' %}" method="post">
+      	{% csrf_token %}
+        <div class="input-group mb-3">
+          <input type="text" name="login" class="form-control" placeholder="{% trans 'Username' %}">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="{% trans 'Password' %}" name="password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember" name="remember">
+              <label for="remember">
+                {% trans "Remember Me" %}
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-success btn-block">{% trans "Sign In" %}</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+
+      <p class="mb-1">
+        <a href="{% url 'account_reset_password' %}">{% trans "I forgot my password" %}</a>
+      </p>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+
+{% endblock %}
